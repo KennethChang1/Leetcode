@@ -5,11 +5,11 @@
 var groupAnagrams = function(strs) {
     let map = new Map();
     
-    for (item of strs) {
+    for (let item of strs) {
         const reordered = reorder(item)
         
         const arr = map.get(reordered) || []
-      
+        
         map.set(reordered, [...arr, item])
     }
     
