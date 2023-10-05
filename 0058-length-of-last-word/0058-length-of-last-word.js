@@ -3,5 +3,6 @@
  * @return {number}
  */
 var lengthOfLastWord = function(s) {
-    return s.trim().split(" ").at(-1).length
+    const trimmedString = s.trim().split(" ");
+    return trimmedString[trimmedString.length - 1].length
 };
