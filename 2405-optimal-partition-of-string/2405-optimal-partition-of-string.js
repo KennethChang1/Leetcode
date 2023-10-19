@@ -10,7 +10,6 @@ var partitionString = function(s) {
         if (curr.indexOf(s[i]) != -1) {
             curr = "";
             count = count + 1;
-            console.log(count)
         }
         
         curr += s[i];
