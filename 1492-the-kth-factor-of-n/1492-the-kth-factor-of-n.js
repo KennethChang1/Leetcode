@@ -17,5 +17,4 @@ var kthFactor = function(n, k) {
     
     
     return -1
-    console.log(factors)
 };
