@@ -17,6 +17,5 @@ var partitionString = function(s) {
         console.log(curr)
     }
     
-    // console.log(count)
     return count + 1
 };
