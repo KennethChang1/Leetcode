@@ -7,7 +7,7 @@ var partitionString = function(s) {
     let prevChars = s[0];
 
     for (let i = 1; i < s.length; i++) {
-      if (!prevChars.includes(s[i])) {
+      if (prevChars.indexOf(s[i]) == -1) {
         prevChars += s[i];
       } else {
         count++;
@@ -16,17 +16,4 @@ var partitionString = function(s) {
     }
 
     return count;
-//     let curr = "";
-//     let count = 0;
-    
-//     for (let i = 0; i < s.length; i++) {
-//         if (curr.indexOf(s[i]) != -1) {
-//             curr = "";
-//             count = count + 1;
-//         }
-        
-//         curr += s[i];
-//     }
-    
-//     return count + 1
 };
