@@ -4,7 +4,7 @@
  * @return {number}
  */
 var findMaxAverage = function(nums, k) {
-let averageValue = -Infinity
+    let averageValue = -Infinity
     let left = 0
     let sum = 0
     for(let right = 0; right < nums.length; right++){
